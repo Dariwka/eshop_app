@@ -1,0 +1,93 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.container-product {
+  padding-bottom: 5rem;
+}
+
+h3.center {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.material-icons {
+  font-size: 2.4em;
+  cursor: pointer;
+}
+.card {
+  min-height: 500px;
+  background: $white_color;
+  margin: 16px;
+  width: 350px;
+  border-radius: 2px;
+}
+.card,
+.card-image {
+  overflow: hidden;
+  border-radius: 2px 2px 0 0;
+  max-height: 400px;
+}
+
+img {
+  cursor: zoom-in;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in;
+  transform: scale(1);
+}
+
+.card-content {
+  text-align: center;
+  padding: 1rem;
+  p {
+    padding: 0.5rem;
+  }
+}
+
+.cart {
+  margin-top: 40px;
+}
+.collection .collection-item {
+  display: flex;
+}
+.collection-item.avatar .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ee6e73;
+  display: block;
+  margin-bottom: 20px;
+}
+.collection .collection-item img {
+  width: 150px;
+  margin-right: 25px;
+}
+.item-desc {
+  align-self: center;
+}
+
+footer {
+  min-height: 80px;
+  width: 100%;
+  background: $nav_bar_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  color: $white_color;
+}
